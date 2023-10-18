@@ -9,6 +9,14 @@
                 font-weight: normal;
                 font-style: normal;
             }
+
+            @font-face {
+                font-family: 'GmarketSansBold';
+                src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+                font-weight: normal;
+                font-style: normal;
+            }
+            
             * {
               font-family:'GmarketSansMedium';
             }
@@ -20,12 +28,16 @@
               line-height:1.4; 
               scroll-behavior: smooth;     
               margin: 0 auto;
-              max-width: 1280px;
-              min-width: 1100px;
+              max-width: 1166px;
+              min-width: 1166px;
             }
 
             a {
               text-decoration: none;
+            }
+
+            a:link, a:hover, a:visited, a:active {
+              color: #37509D;
             }
 
             #header {
@@ -33,54 +45,85 @@
             }
 
             main {
-              margin: 50px 150px 0px 150px;
+              margin: 24px 150px 0px 150px;
             }
 
-            #intro-text {
-              text-align: center;
-              color: #5770a6;
-              margin-bottom: 25px;
+            .div1 {
+              font-size: 17px;
+              color: #5770a6;      
+              font-weight: 600;        
+            }
+
+            .div2 {              
+              font-size: 24px;
+              margin: -15px 0px 0px 0px;
+              font-weight: 700;
             }
             
             #header-profile {
-              display: flex;         
-              align-items: center;     
+              display: flex;     
             }
             
+            section h2 {
+              font-size: 20px;
+            }
+
             .profile-img { 
               flex: 1;
               text-align: center;
             }
 
             .profile-text {
-              flex: 1;
+              flex: 2;
+              margin-left: 21px;
+            }
+
+            .profile-text h3 {
+              margin: 0 auto;
             }
 
             #pyh-profile {
-              width: 350px;              
+              width: 356px;              
             }
 
             .work-list {
               margin: 10px;
             }
 
-            .work-list h3 {
-              color: #859bc4;
+            .company-name {
+              font-size: 26px;
+              font-weight: 1000;
+              font-family:'GmarketSansBold';
+              margin: 25px 0px 0px 0px;
             }
 
-            .work-detail {
+            .company-date {
+              font-size: 14px;
+              color: gray;
+            }
+
+            .company-name span {
+              font-size: 18px;
+            }
+
+            .work-detail {              
+              background-color: #f1f3f5;
               display: flex;
-              align-items: center;  
+              margin-bottom: 5px;
+              padding: 20px;
             }
 
-            .work-detail-title {
+            .work-detail-title {              
               flex: 1;
             }
 
-            .work-detail-content {
-              flex: 3;
+            .work-detail-content {          
+              flex: 2;
             }
 
+            ul {
+              margin: 0px;
+            }
             li {
               line-height: 25px;
             }
@@ -88,7 +131,7 @@
             .skill-keyword {
               font-size: 11px;
               color: #ffff;
-              background-color: #808080;
+              background-color: #000000;
               padding: 7px;
               border-radius: 10px;
               margin-left: 1px;
@@ -97,11 +140,13 @@
     </head>
     <body>
         <header id="header"> 
-          <hr/>
           <div id="intro-text">
-            <h2>자동화를 습관으로, 코드에 대한 끊임없는 의심, 함께 성장하기 위한 노력</h2>
-            <h3>반갑습니다! 박요한입니다!</h3>
-          </div> 
+            <div class="div1">반갑습니다! 박요한입니다!</div><br/>
+            <div class="div2">
+              자동화를 습관으로, 코드에 대한 끊임없는 의심,<br/> 
+              함께 성장하기 위한 노력
+            </div>
+          </div>           
         </header>
           
         <main>
@@ -114,28 +159,27 @@
                 <div class="profile-text">
                   <h3>박요한 Park Yo Han</h3>
                   <div>
-                    <p>Phone. 010-8353-8810</p>
-                    <p>Email. <a href="mailto:parkyh88@nate.com">parkyh88@nate.com</a></p>
-                    <p>Blog. 
-                      <a href="https://spadework-developer.tistory.com/" target="_blank">https://spadework-developer.tistory.com/</a>
+                    <p>Phone <span style="color: #37509D;">010-8353-8810</span></p>
+                    <p>Email <a href="mailto:parkyh88@nate.com">parkyh88@nate.com</a></p>
+                    <p>Blog 
+                      <a href="https://spadework-developer.tistory.com/" target="_blank">spadework-developer.tistory.com</a>
                     </p>                   
-                    <p>GitHub. <a href="https://github.com/parkyh88" target="_blank">https://github.com/parkyh88</a></p>  
+                    <p>GitHub <a href="https://github.com/parkyh88" target="_blank">github.com/parkyh88</a></p>  
                   </div>
                   <hr/>
                   <div>
-                    <p>간단한 소개</p>
                     <p>
                       NodeJS & TypeScript, Python, AWS, NCP 기반의 7년차 개발자로, 
-                      <b style="color: #e27070;">회원 수 38만의 OTT 플랫폼, 한국어 AI 경진대회, Weverse Admin</b> 등의 
+                      <b style="color: #B42B3E;">회원 수 38만의 OTT 플랫폼, 한국어 AI 경진대회, Weverse Admin</b> 등의 
                       서비스에서 플랫폼 개발 및 인프라 구축 등을 해왔습니다.
                     </p>
                     <p>                      
-                      <b style="color: #e27070;">스타트업에선 팀 리더로써, 중견기업에선 백엔드 리드 개발자로</b>
+                      <b style="color: #B42B3E;">스타트업에선 팀 리더로써, 중견기업에선 백엔드 리드 개발자로</b>
                       , 바바요, 한국어 AI 경진대회 플랫폼, 코디파이 플랫폼 등 팀원들과 완벽하게 소화해냈습니다.
                       모든 걸 혼자 만들 수 없기 때문에 협업의 중요성, 각 팀원들의 능력 등을 조화롭게 구성될 수 있도록 많은 대화를 해왔습니다.
                     </p>
                     <p>
-                      <b style="color: #e27070;">반복되는 일에 대해 자동화하고 인적오류를 미연에 방지하고자 항상 개선점을</b> 찾으려고 노력합니다.
+                      <b style="color: #B42B3E;">반복되는 일에 대해 자동화하고 인적오류를 미연에 방지하고자 항상 개선점을</b> 찾으려고 노력합니다.
                       사내 모니터링 시스템을 개발하며 엄청난 효과가 있는 것을 몸소 경험하였습니다.
                     </p>
                   </div>
@@ -146,7 +190,13 @@
               <h2>Work Experience.</h2>
               <hr/>
               <div class="work-list">
-                <h3>아이에이치큐 <a href="https://ihq.co.kr" target="_blank">https://ihq.co.kr</a></h3>
+                <p class="company-name">
+                  아이에이치큐                   
+                  <a href="https://ihq.co.kr" target="_blank">
+                    <span>ihq.co.kr</span>
+                  </a>
+                </p>
+                <span class="company-date">2022-11 ~ 2023-08</span>
                 <p>아이에이치큐는 바바요(babayo.tv) 누적 회원수 38만의 OTT 플랫폼을 개발하여 서비스 중이며, 방송국으로 다양한 컨텐츠를 서비스하는 회사입니다.(현재 서비스 종료)</p>
                 <span class="skill-keyword">NestJs</span>
                 <span class="skill-keyword">Redis</span>
@@ -248,10 +298,15 @@
                     </ul>
                   </div>
                 </div>
-              </div>
-              <hr/>   
+              </div> 
               <div class="work-list">
-                <h3>어반데이터랩 <a href="https://www.urbandatalab.co.kr/" target="_blank">https://www.urbandatalab.co.kr/</a></h3>
+                <p class="company-name">
+                  어반데이터랩 
+                  <a href="https://www.urbandatalab.co.kr/" target="_blank">
+                    <span>urbandatalab.co.kr</span>
+                  </a>
+                </p>
+                <span class="company-date">2020-09 ~ 2022-11</span>
                 <p>AI솔루션, 데이터 플랫폼을 통해 고도화시킨 기술을 기반으로 클라우드형 인공지능 플랫폼 전문 기업입니다.</p>
                 <span class="skill-keyword">NestJs</span>
                 <span class="skill-keyword">Nodejs</span>
@@ -325,9 +380,14 @@
                   </div>                  
                 </div>
               </div>
-              <hr/>   
               <div class="work-list">
-                <h3>오돌주식회사 <a href="https://ohdol.com/" target="_blank">https://ohdol.com/</a></h3>
+                <p class="company-name">
+                  오돌주식회사 
+                  <a href="https://ohdol.com/" target="_blank">
+                    <span>ohdol.com</span>
+                  </a>
+                </p>
+                <span class="company-date">2019-08 ~ 2020-09</span>
                 <p>오돌주식회사는 웹부터 앱까지 One Stop 서비스를 제공하는 SI회사입니다.</p>
                 <span class="skill-keyword">Nodejs</span>
                 <span class="skill-keyword">TypeScript</span>
@@ -417,9 +477,14 @@
                   </div>                  
                 </div>
               </div>  
-              <hr />
               <div class="work-list">
-                <h3>(주)아틀라스네트웍스 <a href="https://www.atlasxdn.com/" target="_blank">https://www.atlasxdn.com/</a></h3>
+                <p class="company-name">
+                  (주)아틀라스네트웍스 
+                  <a href="https://www.atlasxdn.com/" target="_blank">
+                    <span>atlasxdn.com</span>
+                  </a>
+                </p>
+                <span class="company-date">2018-07 ~ 2019-08</span>
                 <p>아틀라스 네트웍스는 자체 솔루션인 XDN 서비스와 SK SI를 주 업무로 하는 회사입니다.</p>
                 <span class="skill-keyword">Nodejs</span>
                 <span class="skill-keyword">TypeScript</span>    
@@ -468,9 +533,14 @@
                   </div>                                   
                 </div>
               </div>  
-              <hr />
               <div class="work-list">
-                <h3>(주)성원아이북랜드 <a href="https://www.ibookland.com/" target="_blank">https://www.ibookland.com/</a></h3>
+                <p class="company-name">
+                  (주)성원아이북랜드
+                  <a href="https://www.ibookland.com/" target="_blank">
+                    <span>ibookland.com</span>
+                  </a>
+                </p>
+                <span class="company-date">2017-03 ~ 2018-07</span>
                 <p>성원 아이북랜드는 독서 문화 선도 기업으로 책 읽기 관련 제품들을 대여 및 판매하는 회사입니다.</p>
                 <span class="skill-keyword">JAVA</span>
                 <span class="skill-keyword">JSP</span>    
@@ -515,6 +585,7 @@
             <section>
               <h2>Other Experience.</h2>
               <hr/>
+              <br/>
               <div class="work-detail">
                 <div class="work-detail-title">2023 한국어 경진대회 웹 플랫폼(프리랜서)</div>
                 <div class="work-detail-content">
@@ -582,6 +653,7 @@
             <section>             
               <h2>Skills.</h2>
               <hr/> 
+              <br/>
               <div class="work-detail">
                 <div class="work-detail-title">Front-End</div>
                 <div class="work-detail-content">
